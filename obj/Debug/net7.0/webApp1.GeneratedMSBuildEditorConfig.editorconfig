@@ -1,0 +1,69 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = webApp1
+build_property.RootNamespace = webApp1
+build_property.ProjectDir = C:\Users\tonyb\repositories\dotnet_files\webApp1\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\tonyb\repositories\dotnet_files\webApp1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/Page1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZTEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/Page2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZTIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/Page3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZTMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/Page4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZTQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/Page5.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZTUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/webApp1/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-5hn4glqoim

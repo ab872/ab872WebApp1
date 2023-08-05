@@ -1,0 +1,13 @@
+
+
+
+dotnet publish --output "C:\Users\tonyb\repositories\dotnet_files\webApp1_publish"
+
+
+
+add a page
+
+dotnet-aspnet-codegenerator razorpage Page4 Empty -outDir Pages/
+
+
+
