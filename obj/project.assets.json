@@ -9722,11 +9722,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tonyb\\repositories\\dotnet_files\\webApp1\\webApp1.csproj",
+      "projectUniqueName": "D:\\Tony\\repositories\\ab872WebApp1\\ab872WebApp1\\webApp1.csproj",
       "projectName": "webApp1",
-      "projectPath": "C:\\Users\\tonyb\\repositories\\dotnet_files\\webApp1\\webApp1.csproj",
+      "projectPath": "D:\\Tony\\repositories\\ab872WebApp1\\ab872WebApp1\\webApp1.csproj",
       "packagesPath": "C:\\Users\\tonyb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tonyb\\repositories\\dotnet_files\\webApp1\\obj\\",
+      "outputPath": "D:\\Tony\\repositories\\ab872WebApp1\\ab872WebApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tonyb\\AppData\\Roaming\\NuGet\\NuGet.Config"
