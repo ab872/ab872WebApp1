@@ -20,3 +20,27 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+div.scrollingReferences1 {
+   margin:5px,5px;
+   padding:5px;
+   background-color:aliceblue;
+   width:96%;
+   height:300px;
+   overflow-x:hidden; 
+   overflow-y:auto;
+   text-align:justify;
+}        
+
+
+
+
+
+
+
+
+
+
+
+
