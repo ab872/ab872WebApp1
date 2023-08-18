@@ -1,26 +1,18 @@
-﻿@page
+@page
 @model IndexModel
 @{
-    ViewData["Title"] = "webApp1 Home page";
+    ViewData["Title"] = "Page on the way";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome to the demo.</h1>
 
-    <p>
-       <a asp-area="" asp-page="/OnTheWay"><span id="linkOnTheWay1" 
-           style="color:Navy;font-size:16px;"><b>Unfinished Page</b></span></a><br><br>
+   <h1>@ViewData["Title"]</h1>
 
-       <a asp-area="" asp-page="/OnTheWay"><span id="linkOnTheWay1" 
-           style="color:Navy;font-size:16px;"><b>Unfinished Page</b></span></a><br><br>
-
-       <a asp-area="" asp-page="/OnTheWay"><span id="linkOnTheWay1" 
-           style="color:Navy;font-size:16px;"><b>Unfinished Page</b></span></a>
-    </p>
-
-
-    <p>References: <a asp-area="" asp-page="/MainReferences">View the references</a>.</p>
-
+   <center>
+   <img src="pageIcon.jpg" alt="page icon" height="120" width="120" /><br>
+   <span style="color:Grey;line-height: 50%;font-size:12px;">
+   <b><i>Page with text and graphics</i></b></span>
+   </center><br>
 
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 
@@ -50,7 +42,6 @@
    </p>
 
 
-
 <!--    
 *************************** 
 
@@ -77,5 +68,5 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
 
-
 </div>
+

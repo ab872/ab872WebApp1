@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\Tony\\repositories\\ab872WebApp1\\ab872WebApp1\\wwwroot\\pageIcon.jpg",
+      "PackagePath": "staticwebassets\\pageIcon.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.webApp1.props",
       "PackagePath": "build\\webApp1.props"
     },

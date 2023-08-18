@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IubIHs8U/v04fChPvtvg+feS3GIOsfj3vdT99uvfbg8=",
+  "Hash": "x3UtBNTcJN7shYn65pgU+FsCH++30G02LJTVJrfbQio=",
   "Source": "webApp1",
   "BasePath": "_content/webApp1",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Tony\\repositories\\ab872WebApp1\\ab872WebApp1\\wwwroot\\pageIcon.jpg",
+      "SourceId": "webApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Tony\\repositories\\ab872WebApp1\\ab872WebApp1\\wwwroot\\",
+      "BasePath": "_content/webApp1",
+      "RelativePath": "pageIcon.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pageIcon.jpg"
     }
   ]
 }
