@@ -1,0 +1,620 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Color Table";
+}
+
+<div class="text-center">
+
+   <h1>@ViewData["Title"]</h1>
+
+    <p></p>
+
+    <center>
+       <div class="scrollingTable1"  style="color:black;background-color:white;border:2px solid maroon;border-radius:8px;margin-top:3px;margin-bottom:3px" id="scrollingReferenceOut" name="scrollingReferenceOut" title="the color table appears within this scrolling area" aria-label="the color table appears within this scrolling area">
+
+<br>
+<center>
+<table border="3" rules="all"> 
+   <tr>
+      <td>
+         <span style="font-size:10px;"><center><b>Name</b></center></span>
+      </td>  
+
+      <td> 
+         <span style="font-size:10px;"><center><b>HEX</b></center></span>
+      </td>
+
+      <td>
+         <span style="font-size:10px;"><center><b>Decimal</b></center></span>
+      </td>
+
+      <td>
+         <span style="font-size:10px;"><center><b>&nbsp;&nbsp;Sample&nbsp;&nbsp;</b></center></span>
+      </td>
+   </tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;AliceBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xf0 0xf8 0xff&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;240, 248, 255&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:aliceblue;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;AntiqueWhite&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xfa 0xeb 0xd7&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;250, 235, 215&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:antiquewhite;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Aqua&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0xff 0xff&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 255, 255&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:aqua;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Aquamarine&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x7f 0xff 0xd4&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;127, 255, 212&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:aquamarine;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Azure&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xf0 0xff 0xff&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;240, 255, 255&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:azure;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Beige&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xf5 0xf5 0xdc&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;245, 245, 220&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:beige;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Bisque&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xe4 0xc4&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 228, 196&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:bisque;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Black&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0x00 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 0, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:black;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;BlanchedAlmond&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xeb 0xcd&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 235, 205&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:blanchedalmond;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Blue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>0x00 0x00 0xff</center></span></td><td><span style="font-size:10px;"><center>0, 0, 255</center></span></td><td style="color:black;background-color:blue;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;BlueViolet&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x8a 0x2b 0xe2&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;138, 43, 226&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:blueviolet;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Brown&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xa5 0x2a 0x2a&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;165, 42, 42&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:brown;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;BurlyWood&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xde 0xb8 0x87&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;222, 184, 135&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:burlywood;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;CadetBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x5f 0x9e 0xa0&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;95, 158, 160&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:cadetblue;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Chartreuse&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x7f 0xff 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;127, 255, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:chartreuse;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Chocolate&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xd2 0x69 0x1e&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;210, 105, 30&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:chocolate;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Coral&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0x7f 0x50&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 127, 80&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:coral;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;CornflowerBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x64 0x95 0xed&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;100, 149, 237&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:cornflowerblue;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Cornsilk&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xf8 0xdc&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 248, 220&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:cornsilk;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Crimson&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xdc 0x14 0x3c&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;220, 20, 60&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:crimson;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Cyan&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0xff 0xff&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 255, 255&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:cyan;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0x00 0x8b&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 0, 139&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkblue;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkCyan&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0x8b 0x8b&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 139, 139&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkcyan;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkGoldenrod&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xb8 0x86 0x0b&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;184, 134, 11&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkgoldenrod;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkGray&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xa9 0xa9 0xa9&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;169, 169, 169&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkgray;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0x64 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 100, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkgreen;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkKhaki&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xbd 0xb7 0x6b&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;189, 183, 107&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkkhaki;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkMagenta&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x8b 0x00 0x8b&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;139, 0, 139&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkmagenta;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkOliveGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x55 0x6b 0x2f&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;85, 107, 47&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkolivegreen;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkOrange&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0x8c 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 140, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkorange;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkOrchid&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x99 0x32 0xcc&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;153, 50, 204&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkorchid;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkRed&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x8b 0x00 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;139, 0, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkred;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkSalmon&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xe9 0x96 0x7a&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;233, 150, 122&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darksalmon;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkSeaGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x8f 0xbc 0x8f&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;143, 188, 143&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkseagreen;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkSlateBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x48 0x3d 0x8b&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;72, 61, 139&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkslateblue;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkSlateGray&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x2f 0x4f 0x4f&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;47, 79, 79&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkslategray;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkTurquoise&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0xce 0xd1&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 206, 209&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkturquoise;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DarkViolet&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x94 0x00 0xd3&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;148, 0, 211&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:darkviolet;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DeepPink&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0x14 0x93&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 20, 147&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:deeppink;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DeepSkyBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0xbf 0xff&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 191, 255&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:deepskyblue;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DimGray&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x69 0x69 0x69&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;105, 105, 105&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:dimgray;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;DodgerBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x1e 0x90 0xff&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;30, 144, 255&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:dodgerblue;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;FireBrick&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xb2 0x22 0x22&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;178, 34, 34&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:firebrick;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;FloralWhite&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xfa 0xf0&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 250, 240&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:floralwhite;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;ForestGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x22 0x8b 0x22&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;34, 139, 34&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:forestgreen;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Fuchsia&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0x00 0xff&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 0, 255&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:fuchsia;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Gainsboro&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xdc 0xdc 0xdc&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;220, 220, 220&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:gainsboro;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;GhostWhite&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xf8 0xf8 0xff&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;248, 248, 255&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:ghostwhite;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Gold&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xd7 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 215, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:gold;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Goldenrod&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xda 0xa5 0x20&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;218, 165, 32&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:goldenrod;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Gray&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x80 0x80 0x80&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;128, 128, 128&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:gray;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Green&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0x80 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 128, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:green;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;GreenYellow&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xad 0xff 0x2f&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;173, 255, 47&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:greenyellow;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;HoneyDew&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xf0 0xff 0xf0&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;240, 255, 240&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:honeydew;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;HotPink&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0x69 0xb4&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 105, 180&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:hotpink;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;IndianRed&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xcd 0x5c 0x5c&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;205, 92, 92&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:indianred;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Indigo&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x4b 0x00 0x82&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;75, 0, 130&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:indigo;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Ivory&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xff 0xf0&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 255, 240&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:ivory;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Khaki&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xf0 0xe6 0x8c&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;240, 230, 140&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:khaki;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Lavender&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xe6 0xe6 0xfa&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;230, 230, 250&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lavender;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LavenderBlush&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xf0 0xf5&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 240, 245&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lavenderblush;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LawnGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x7c 0xfc 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;124, 252, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lawngreen;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LemonChiffon&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xfa 0xcd&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 250, 205&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lemonchiffon;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xad 0xd8 0xe6&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;173, 216, 230&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightblue;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightCoral&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xf0 0x80 0x80&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;240, 128, 128&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightcoral;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightCyan&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xe0 0xff 0xff&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;224, 255, 255&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightcyan;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightGoldenrodYellow&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xfa 0xfa 0xd2&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;250, 250, 210&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightgoldenrodyellow;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightGray&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xd3 0xd3 0xd3&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;211, 211, 211&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightgray;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x90 0xee 0x90&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;144, 238, 144&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightgreen;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightPink&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xb6 0xc1&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 182, 193&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightpink;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightSalmon&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xa0 0x7a&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 160, 122&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightsalmon;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightSeaGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x20 0xb2 0xaa&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;32, 178, 170&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightseagreen;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightSkyBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x87 0xce 0xfa&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;135, 206, 250&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightskyblue;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightSlateGray&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x77 0x88 0x99&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;119, 136, 153&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightslategray;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightSteelBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xb0 0xc4 0xde&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;176, 196, 222&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightsteelblue;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LightYellow&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xff 0xe0&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 255, 224&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lightyellow;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Lime&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0xff 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 255, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:lime;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;LimeGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x32 0xcd 0x32&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;50, 205, 50&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:limegreen;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Linen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xfa 0xf0 0xe6&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;250, 240, 230&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:linen;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Magenta&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0x00 0xff&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 0, 255&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:magenta;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Maroon&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x80 0x00 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;128, 0, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:maroon;">&nbsp;&nbsp;</td></tr>
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MediumAquamarine&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x66 0xcd 0xaa&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;102, 205, 170&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:mediumaquamarine;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MediumBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0x00 0xcd&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 0, 205&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:mediumblue;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MediumOrchid&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xba 0x55 0xd3&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp186, 85, 211&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:mediumorchid;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MediumPurple&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x93 0x70 0xd8&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;147, 112, 216&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:mediumpurple;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MediumSeaGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x3c 0xb3 0x71&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;60, 179, 113&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:mediumseagreen;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MediumSlateBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x7b 0x68 0xee&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;123, 104, 238&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:mediumslateblue;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MediumSpringGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0xfa 0x9a&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 250, 154&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:mediumspringgreen;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MediumTurquoise&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x48 0xd1 0xcc&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;72, 209, 204&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:mediumturquoise;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MediumVioletRed&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xc7 0x15 0x85&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;199, 21, 133&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:mediumvioletred;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MidnightBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x19 0x19 0x70&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;25, 25, 112&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:midnightblue;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MintCream&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xf5 0xff 0xfa&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;245, 255, 250&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:mintcream;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;MistyRose&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xe4 0xe1&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 228, 225&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:mistyrose;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Moccasin&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xe4 0xb5&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 228, 181&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:moccasin;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;NavajoWhite&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xde 0xad&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 222, 173&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:NavajoWhite;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Navy&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0x00 0x80&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 0, 128&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:navy;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;OldLace&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xfd 0xf5 0xe6&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;253, 245, 230&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:oldlace;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Olive&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x80 0x80 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;128, 128, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:olive;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;OliveDrab&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x6b 0x8e 0x23&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;107, 142, 35&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:olivedrab;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Orange&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xa5 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 165, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:orange;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;OrangeRed&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0x45 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 69, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:orangered;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Orchid&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xda 0x70 0xd6&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;218, 112, 214&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:orchid;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;PaleGoldenrod&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xee 0xe8 0xaa&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;238, 232, 170&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:palegoldenrod;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;PaleGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x98 0xfb 0x98&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;152, 251, 152&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:palegreen;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;PaleTurquoise&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xaf 0xee 0xee&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;175, 238, 238&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:paleturquoise;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;PaleVioletRed&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xd8 0x70 0x93&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;216, 112, 147&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:palevioletred;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;PapayaWhip&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xef 0xd5&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 239, 213&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:papayawhip;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;PeachPuff&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xda 0xb9&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 218, 185&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:peachpuff;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Peru&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xcd 0x85 0x3f&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;205, 133, 63&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:peru;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Pink&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xc0 0xcb&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 192, 203&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:pink;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Plum&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xdd 0xa0 0xdd&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;221, 160, 221&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:plum;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;PowderBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xb0 0xe0 0xe6&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;176, 224, 230&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:powderblue;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Purple&nbsp;&nbsp;</span></td>.<td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x80 0x00 0x80&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;128, 0, 128&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:purple;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;RebeccaPurple&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x66 0x33 0x99&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;102, 51, 153&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:rebeccapurple;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Red&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0x00 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 0, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:red;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;RosyBrown&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xbc 0x8f 0x8f&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;188, 143, 143&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:rosybrown;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;RoyalBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x41 0x69 0xe1&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;65, 105, 225&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:royalblue;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;SaddleBrown&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x8b 0x45 0x13&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;139, 69, 19&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:saddlebrown;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Salmon&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xfa 0x80 0x72&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;250, 128, 114&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:salmon;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;SandyBrown&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xf4 0xa4 0x60&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;244, 164, 96&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:sandybrown;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;SeaGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x2e 0x8b 0x57&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;46, 139, 87&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:seagreen;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;SeaShell&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xf5 0xee&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 245, 238&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:seashell;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Sienna&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xa0 0x52 0x2d&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;160, 82, 45&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:sienna;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Silver&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xc0 0xc0 0xc0&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;192, 192, 192&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:silver;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;SkyBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x87 0xce 0xeb&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;135, 206, 235&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:skyblue;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;SlateBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x6a 0x5a 0xcd&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;106, 90, 205&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:slateblue;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;SlateGray&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x70 0x80 0x90&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;112, 128, 144&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:slategray;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Snow&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xfa 0xfa&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 250, 250&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:snow;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;SpringGreen&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0xff 0x7f&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 255, 127&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:springgreen;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;SteelBlue&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x46 0x82 0xb4&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;70, 130, 180&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:steelblue;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Tan&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xd2 0xb4 0x8c&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;210, 180, 140&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:tan;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Teal&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x00 0x80 0x80&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0, 128, 128&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:teal;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Thistle&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xd8 0xbf 0xd8&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;216, 191, 216&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:thistle;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Tomato&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0x63 0x47&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 99, 71&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:tomato;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Turquoise&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0x40 0xe0 0xd0&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;64, 224, 208&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:turquoise;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Violet&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>0xee 0x82 0xee</center></span></td><td><span style="font-size:10px;"><center>238, 130, 238</center></span></td><td style="color:black;background-color:violet;">&nbsp;&nbsp;</td></tr>
+
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Wheat&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>0xf5 0xde 0xb3</center></span></td><td><span style="font-size:10px;"><center>245, 222, 179</center></span></td><td style="color:black;background-color:Wheat;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;White</span></td><td><span style="font-size:10px;"><center>0xff 0xff 0xff</center></span></td><td><span style="font-size:10px;"><center>255, 255, 255</center></span></td><td style="color:black;background-color:White;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;WhiteSmoke&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>0xf5 0xf5 0xf5</center></span></td><td><span style="font-size:10px;"><center>245, 245, 245</center></span></td><td style="color:black;background-color:Whitesmoke;">&nbsp;&nbsp;</td></tr>
+
+
+
+<tr><td><span style="font-size:10px;">&nbsp;&nbsp;Yellow&nbsp;&nbsp;</span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;0xff 0xff 0x00&nbsp;&nbsp;</center></span></td><td><span style="font-size:10px;"><center>&nbsp;&nbsp;255, 255, 0&nbsp;&nbsp;</center></span></td><td style="color:black;background-color:yellow;">&nbsp;&nbsp;</td></tr>
+
+
+
+   <tr>
+      <td>
+         <span style="font-size:10px;">&nbsp;&nbsp;YellowGreen&nbsp;&nbsp;</span>
+      </td>
+
+      <td>
+         <span style="font-size:10px;"><center>&nbsp;&nbsp;0x9a 0xcd 0x32&nbsp;&nbsp;</center></span>
+      </td>
+
+      <td>
+         <span style="font-size:10px;"><center>&nbsp;&nbsp;154, 205, 50&nbsp;&nbsp;</center></span>
+      </td>
+
+      <td style="color:black;background-color:yellowgreen;">
+         &nbsp;&nbsp;
+      </td>
+   </tr>
+
+
+
+   <tr>
+      <td>
+         <span style="font-size:10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      </td>
+
+      <td>
+         <span style="font-size:10px;"><center>&nbsp;&nbsp;&nbsp;&nbsp;</center></span>
+      </td>
+
+      <td>
+         <span style="font-size:10px;"><center>&nbsp;&nbsp;&nbsp;&nbsp;</center></span>
+      </td>
+
+      <td style="color:black;background-color:white;">
+         &nbsp;&nbsp;
+      </td>
+   </tr> ';
+
+</table>
+</center><br>
+
+ 
+
+<center>
+   <span style="color:Navy;font-size:10px;"><b>Copyright &#169; 2020 - 2021. All rights reserved.</b></span>
+</center><br><br><br> 
+
+
+
+	</div>
+
+    </center>
+
+
+    <p>
+       <br>
+    </p>
+
+
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+</div>
+
+
+
+

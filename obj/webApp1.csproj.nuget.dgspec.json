@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tony\\repositories\\ab872WebApp1\\ab872WebApp1\\webApp1.csproj": {}
+    "C:\\Users\\tony\\tbdownloads\\repositories\\ab872WebApp1_nuc_30aug2023\\ab872WebApp1\\webApp1.csproj": {}
   },
   "projects": {
-    "D:\\Tony\\repositories\\ab872WebApp1\\ab872WebApp1\\webApp1.csproj": {
+    "C:\\Users\\tony\\tbdownloads\\repositories\\ab872WebApp1_nuc_30aug2023\\ab872WebApp1\\webApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tony\\repositories\\ab872WebApp1\\ab872WebApp1\\webApp1.csproj",
+        "projectUniqueName": "C:\\Users\\tony\\tbdownloads\\repositories\\ab872WebApp1_nuc_30aug2023\\ab872WebApp1\\webApp1.csproj",
         "projectName": "webApp1",
-        "projectPath": "D:\\Tony\\repositories\\ab872WebApp1\\ab872WebApp1\\webApp1.csproj",
-        "packagesPath": "C:\\Users\\tonyb\\.nuget\\packages\\",
-        "outputPath": "D:\\Tony\\repositories\\ab872WebApp1\\ab872WebApp1\\obj\\",
+        "projectPath": "C:\\Users\\tony\\tbdownloads\\repositories\\ab872WebApp1_nuc_30aug2023\\ab872WebApp1\\webApp1.csproj",
+        "packagesPath": "C:\\Users\\tony\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tony\\tbdownloads\\repositories\\ab872WebApp1_nuc_30aug2023\\ab872WebApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tonyb\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tony\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,7 +40,7 @@
           "dependencies": {
             "Microsoft.VisualStudio.Web.Codegeneration.Design": {
               "target": "Package",
-              "version": "[7.0.8, )"
+              "version": "[7.0.9, )"
             }
           },
           "imports": [
@@ -64,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

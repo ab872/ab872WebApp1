@@ -35,6 +35,16 @@ div.scrollingReferences1 {
 
 
 
+div.scrollingTable1 {
+   margin:5px,5px;
+   padding:5px;
+   background-color:aliceblue;
+   width:96%;
+   height:400px;
+   overflow-x:hidden; 
+   overflow-y:auto;
+   text-align:justify;
+}        
 
 
 
