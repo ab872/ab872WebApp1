@@ -22,6 +22,18 @@ body {
 }
 
 
+div.debugOut {
+   margin:5px,5px;
+   padding:5px;
+   background-color:aliceblue;
+   width:96%;
+   height:260px;
+   overflow-x:hidden; 
+   overflow-y:auto;
+   text-align:justify;
+}        
+
+
 div.scrollingReferences1 {
    margin:5px,5px;
    padding:5px;
@@ -40,7 +52,7 @@ div.scrollingTable1 {
    padding:5px;
    background-color:aliceblue;
    width:96%;
-   height:400px;
+   height:300px;
    overflow-x:hidden; 
    overflow-y:auto;
    text-align:justify;
