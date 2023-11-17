@@ -59,6 +59,47 @@ div.scrollingTable1 {
 }        
 
 
+div.colorPickerScrollingTable1 {
+   margin:5px,5px;
+   padding:5px;
+   background-color:aliceblue;
+   width:96%;
+   height:100px;
+   overflow-x:hidden; 
+   overflow-y:auto;
+   text-align:justify;
+}        
+
+
+
+
+input[type='range'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 5px;
+    border: 3px solid #808080;
+}
+
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    border: 3px solid #808080;
+}
+
+input[type='range']::-moz-range-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    border: 3px solid #808080;
+}
+
+
 
 
 

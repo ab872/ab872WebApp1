@@ -9,81 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = webApp1
 build_property.RootNamespace = webApp1
-build_property.ProjectDir = C:\Users\tonyb\repositories\dotnet_files\working_files\ab872WebApp1_nuc_30oct2023\ab872WebApp1\
+build_property.ProjectDir = C:\Users\tonyb\repositories\dotnet_files\working_files\ab872WebApp1_nuc_17nov2023\ab872WebApp1\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\tonyb\repositories\dotnet_files\working_files\ab872WebApp1_nuc_30oct2023\ab872WebApp1
+build_property.MSBuildProjectDirectory = C:\Users\tonyb\repositories\dotnet_files\working_files\ab872WebApp1_nuc_17nov2023\ab872WebApp1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/About.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/Debugger.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/Debugger.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVidWdnZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/Error.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/Index.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/MainReferences.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/mainCode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWFpbkNvZGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/MainReferences.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblJlZmVyZW5jZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/mainTools.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/mainTools.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWFpblRvb2xzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/OnTheWay.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/OnTheWay.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT25UaGVXYXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/Page1.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/Page1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZTEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/Page2.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/Page2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZTIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/Page3.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/Page3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZTMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/Page4.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/Page4.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZTQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/Page5.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/Page5.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZTUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/Privacy.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/toolsColorTable.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/toolsColorPicker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdG9vbHNDb2xvclBpY2tlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/toolsColorTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdG9vbHNDb2xvclRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/_ViewImports.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/_ViewStart.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_30oct2023/ab872WebApp1/Pages/Shared/_Layout.cshtml]
+[C:/Users/tonyb/repositories/dotnet_files/working_files/ab872WebApp1_nuc_17nov2023/ab872WebApp1/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5hn4glqoim
