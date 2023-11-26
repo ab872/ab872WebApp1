@@ -22,6 +22,105 @@ body {
 }
 
 
+
+
+.grid-container {
+     border: 3px solid rgb(211, 211, 211, 0.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+     grid-template-rows: 03vh 40vh 03vh; 
+}
+
+
+.grid-item {
+<!--     border: 3px solid red;    -->
+
+}
+
+.grid-itemTopBottom {
+<!--     border: 3px solid purple;    -->
+
+}
+
+.grid-itemMargin {
+<!--     border: 3px solid green;    -->
+
+}
+
+
+
+.grid-containerIntro {
+     border: 3px solid rgb(211, 211, 211, 1.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 03vh 170vh 03vh; 
+}
+
+
+
+
+
+.grid-containerReference {
+     border: 3px solid rgb(211, 211, 211, 1.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 03vh 1630vh 03vh; 
+}
+
+
+.grid-itemReference {
+
+}
+
+.grid-itemTopBottomReference {
+      
+}
+
+.grid-itemMarginReference {
+
+}
+
+
+
+.grid-containerCode1 {
+     border: 3px solid rgb(211, 211, 211, 1.0); 
+     width:75%;   
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+     grid-template-rows: 0.5vh 310vh 0.5vh; 
+}
+
+
+.grid-containerCode2 {
+     border: 3px solid rgb(211, 211, 211, 1.0); 
+     width:75%;   
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+     grid-template-rows: 0.5vh 70vh 0.5vh; 
+}
+
+
+.grid-itemCode {
+
+}
+
+.grid-itemTopBottomCode {
+
+}
+
+.grid-itemMarginCode {
+
+}
+
+
+
+
+
 div.debugOut {
    margin:5px,5px;
    padding:5px;
@@ -45,6 +144,18 @@ div.scrollingReferences1 {
    text-align:justify;
 }        
 
+
+
+div.codeFizzBuzzScrollingText1 {
+   margin:5px,5px;
+   padding:5px;
+   background-color:aliceblue;
+   width:96%;
+   height:300px;
+   overflow-x:hidden; 
+   overflow-y:auto;
+   text-align:justify;
+}        
 
 
 div.scrollingTable1 {

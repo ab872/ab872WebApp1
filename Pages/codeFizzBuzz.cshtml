@@ -1,0 +1,862 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "FizzBuzz";
+}
+
+<div class="text-center">
+
+   <h1>@ViewData["Title"]</h1>
+
+    <p></p>
+
+    <center>
+       <div class="codeFizzBuzzScrollingText1"
+          style="color:black;background-color:aliceblue;border:2px solid maroon;
+          border-radius:8px;margin-top:3px;margin-bottom:3px"
+          id="scrollingReferenceOut" 
+          name="scrollingReferenceOut"
+          title="the code and references appear within this scrolling area"
+          aria-label="the code and references appear within this scrolling area">
+
+<br><br>
+<span id="textIntroduction2" style="color:Black;font-size:23px;">This is the 
+<span id="textIntroductionEmphasized21" style="color:Navy;font-size:25px;"><b>code</b></span>
+for a 
+<span id="textIntroductionEmphasized22" style="color:Navy;font-size:25px;"><b>demo</b></span> 
+of the game 
+<span id="textIntroductionEmphasized23" style="color:Navy;font-size:25px;"><b>FizzBuzz</b></span>. 
+It illustrates 
+<span id="textIntroductionEmphasized24" style="color:Navy;font-size:25px;"><b>basic iteration and conditional statements</b></span>.
+ <br><br>
+
+Output the numbers from 1 to 100. 
+<br><br>
+&nbsp;&nbsp;&nbsp;
+1.   If the number is divisible by 3, display the word  "FIZZ".
+<br><br>
+&nbsp;&nbsp;&nbsp;
+2.   If the number is divisible by 5, display the word "BUZZ".
+<br><br>
+&nbsp;&nbsp;&nbsp;
+3.   If the number is divisible by both 3 and 5, display the word "FIZZBUZZ". 
+<br><br>
+
+</span>
+<br><br>
+
+
+<center> 
+<span id="codeLanguageTitle1" style="color:Navy;font-size:54px;"><b>JavaScript</b></span>
+</center><br>
+
+<center>
+<div class="grid-containerCode1">
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeText" style="color:Black;font-size:16px;">
+<pre>
+var text2display = "";        
+
+var counter= 0;
+           
+var divisibleBy3 = false;
+
+var divisibleBy5 = false;
+
+text2display = 
+"Results of the code execution." + 
+"&lt;br>&lt;br>";                  
+
+
+for (counter = 1; counter <= 100; counter++) {
+
+   divisibleBy3 = false;
+   divisibleBy5 = false;
+
+   text2display = text2display + 
+   "The count is " +  counter;
+
+
+   if ( (counter%3) === 0 )
+   {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      divisibleBy3 = true;
+   }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   if ( (counter%5) === 0 )
+   {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      divisibleBy5 = true;
+   }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+if ( divisibleBy3 && divisibleBy5 ) {
+   //  Start   divisible by both 3 and 5
+   
+   text2display = text2display + 
+   '&nbsp;&nbsp;&nbsp;' + 
+   '&lt;b>' + 
+   "FIZZBUZZ" + 
+   '&lt;/b>';
+
+   //  End   divisible by both 3 and 5
+}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+if ( divisibleBy3 && !divisibleBy5 ) {
+   //  Start   divisible by 3 only
+
+   text2display = text2display + 
+   '&nbsp;&nbsp;&nbsp;' + 
+   '&lt;b>' + 
+   "FIZZ" + 
+   '&lt;/b>';
+
+   //  End   divisible by 3 only
+}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+if ( !divisibleBy3 && divisibleBy5 ) {
+   //  Start   divisible by 5 only
+
+   text2display = text2display + 
+   '&nbsp;&nbsp;&nbsp;' + 
+   '&lt;b>' + 
+   "BUZZ" + 
+   '&lt;b>';
+
+   //  End   divisible by 5 only
+}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+   text2display = text2display + 
+   "&lt;br>";            
+
+   //   end for loop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+   text2display = text2display + 
+   "&lt;br>";             
+
+
+document.getElementById("textOutput").innerHTML = 
+text2display + '&lt;br>';               
+
+</pre>
+<br><br>
+
+</span>
+<br><br>
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeComments" style="color:Maroon;font-size:14px;">
+<b>//  build the string to display</b><br>
+<b>//  counter fom 1 to 100</b><br>
+<b>//  variable used to improve code readability</b><br>
+<b>//  variable used to improve code readability</b><br>
+<b>//  begin building the text to display"</b>
+<br>
+<br>
+<b>//  Set up the loop</b>
+<br>
+<b>//  initialize vars to false</b>
+<br>
+<br>
+<b>//  display the count</b>
+<br>
+<br>
+<br>
+<br>
+<b>//  is the count divisible by 3?</b>
+<br>
+<br>
+<br>
+<b>//  is the count divisible by 5?</b>
+<br>
+<br>
+<br>
+<br>
+<b>//  count is divisible by BOTH 3 and 5</b>
+<br>
+<br>
+<br>
+<br>
+<b>//  output the string FIZZBUZZ</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>//  count is divisible by 3 only</b>
+<br>
+<br>
+<br>
+<br>
+<b>//  output the string FIZZ</b>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>//  count is divisible by 5 only</b>
+<br>
+<br>
+<br>
+<br>
+<b>//  output the string BUZZ</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>//  terminate the line of text</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>//  terminate the line of text</b>
+<br>
+<br>
+<b>//  display the text</b>
+
+</span>
+<br><br>
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <!--  end of grid container Code 1 -->
+</div>
+</center><br><br>
+
+
+
+
+<center> 
+<span id="codeLanguageTitle2" style="color:Navy;font-size:54px;"><b>PHP</b></span>
+</center><br>
+
+<center>
+<div class="grid-containerCode2">
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeText" style="color:Black;font-size:15px;">
+for ($counter = 1; $counter <= 100; $counter++) {
+<br><br>
+&nbsp;&nbsp;&nbsp;
+ echo "The count is $counter";
+<br><br>
+if ( (($counter%3) ==0) && (($counter%5) ==0) ) {
+<br>
+&nbsp;&nbsp;&nbsp;
+echo "FIZZBUZZ";
+<br>
+}
+<br>
+elseif ( ($counter%3) ==0 ) {
+<br>
+&nbsp;&nbsp;&nbsp;
+echo "FIZZ";
+<br>
+}
+<br>
+elseif ( ($counter%5) ==0 ) {
+<br>
+&nbsp;&nbsp;&nbsp;
+echo "BUZZ";
+<br>
+}
+<br>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+//   end for loop
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+<br>
+}
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+</span>
+<br><br>
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeComments" style="color:Maroon;font-size:15px;">
+<b>Set up the loop</b>
+<br>
+<br>
+<br>
+<b>Display the count</b>
+<br>
+<br>
+<br>
+<b>Is the count divisible by BOTH 3 and 5?</b>
+<br>
+<br>
+<br>
+<b>Is the count divisible by 3?</b>
+<br>
+<br>
+<br>
+<b>Is the count divisible by 5?</b>
+</span>
+<br><br>
+
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <!--  end of grid container Code 2 -->
+</div>
+</center><br>
+
+<br><br>
+
+
+<span style="color:Navy;font-size:56px;"><b>References</b></span><br><br>
+
+
+<span style="color:Black;font-size:18px;">[1]&nbsp;&nbsp;&nbsp;&nbsp;"HTML 5.2." <i>W3C</i>, 14-Dec-2017. [Online]. Available: https://www.w3.org/TR/html52/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/html52/" target="_blank"><span style="font-size:18px;"><b><i>HTML 5.2.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[2]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification." <i>W3C</i>, 12-Apr-2016. [Online]. Available: https://www.w3.org/TR/CSS22/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/CSS22/" target="_blank"><span style="font-size:18px;"><b><i>Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[3]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets, level 1." <i>W3C</i>, 11-Apr-2008. [Online]. Available: https://www.w3.org/TR/REC-CSS1/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/REC-CSS1/" target="_blank"><span style="font-size:18px;"><b><i>Cascading Style Sheets, level 1.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[4]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Snapshot 2020." <i>W3C</i>, 22-Dec-2020. [Online]. Available: https://www.w3.org/TR/CSS/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/CSS/" target="_blank"><span style="font-size:18px;"><b><i>CSS Snapshot 2020.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[5]&nbsp;&nbsp;&nbsp;&nbsp;"ECMA-262," <i>Ecma International</i>, Jun-2020. [Online]. Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-262/. [Accessed: 13-Jun-2021].</span><br>
+
+<span style="color:Navy;font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ECMAScript&#174; 2020 language specification<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11th edition, June 2020<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:Navy;font-size:18px;"><b>This is the specification for JavaScript.</b></span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank"><span style="font-size:18px;"><b><i>ECMA-262,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[6]&nbsp;&nbsp;&nbsp;&nbsp;"ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0." <i>Ecma International</i>, Dec-2012. [Online]. Available: https://402.ecma-international.org/1.0/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://402.ecma-international.org/1.0/" target="_blank"><span style="font-size:18px;"><b><i>ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[7]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 2." <i>W3C</i>, 04-Oct-2018. [Online]. Available: https://www.w3.org/TR/SVG2/. [Accessed: 01-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/SVG2/" target="_blank"><span style="font-size:18px;"><b><i>Scalable Vector Graphics (SVG) 2.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[8]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 1.1 (Second Edition)." <i>W3C</i>, 16-Aug-2011. [Online]. Available: https://www.w3.org/TR/SVG11/. [Accessed: 01-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/SVG11/" target="_blank"><span style="font-size:18px;"><b><i>Scalable Vector Graphics (SVG) 1.1 (Second Edition).</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[9]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "SVG: Scalable Vector Graphics | MDN." <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/SVG. [Accessed: 06-Dec-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank"><span style="font-size:18px;"><b><i>SVG: Scalable Vector Graphics | MDN.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[10]&nbsp;&nbsp;&nbsp;&nbsp;"Web Content Accessibility Guidelines (WCAG) 2.1." <i>W3C</i>, 05-Jun-2018. [Online]. Available: 
+https://www.w3.org/TR/WCAG21/.
+[Accessed: 20-Apr-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/WCAG21/" target="_blank"><span style="font-size:18px;"><b><i>Web Content Accessibility Guidelines (WCAG) 2.1.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[11]&nbsp;&nbsp;&nbsp;&nbsp;"Techniques for WCAG 2.2." <i>W3C</i>, 09-Mar-2021. [Online]. Available: https://www.w3.org/WAI/WCAG21/<br>
+Techniques/. [Accessed: 20-Apr-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/WAI/WCAG21/Techniques/" target="_blank"><span style="font-size:18px;"><b><i>Techniques for WCAG 2.2.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[12]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "CSS Grid Layout - CSS: Cascading Style Sheets | MDN." <i>MDN Web Docs</i>. [Online]. Available:
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS&#x5f;Grid\&#x5f;Layout. [Accessed: 03-Jun-2022]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid Layout - CSS: Cascading Style Sheets | MDN.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[13]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Grid Layout." <i>W3Schools</i>. [Online]. Available: 
+https://www.w3schools.com/css/<br>
+css&#x5f;grid.asp. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/css/css_grid.asp" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid Layout.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[14]&nbsp;&nbsp;&nbsp;&nbsp;C. House, "A Complete Guide to Grid," <i>CSS-Tricks</i>, 12-May-2021. [Online]. Available: https://css-tricks.com/<br>
+snippets/css/complete-guide-grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"><span style="font-size:18px;"><b><i>A Complete Guide to Grid,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[15]&nbsp;&nbsp;&nbsp;&nbsp;J. Suh, "Learn CSS Grid - A Guide to Learning CSS Grid." <i>learncssgrid.com</i>. [Online]. Available: http://learncssgrid.com/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="http://learncssgrid.com/" target="_blank"><span style="font-size:18px;"><b><i>Learn CSS Grid - A Guide to Learning CSS Grid.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[16]&nbsp;&nbsp;&nbsp;&nbsp;M. O. contributors, J. Thornton and Bootstrap, "CSS Grid." <i>getbootstrap.com</i>. [Online]. Available: https://getbootstrap.com/docs/<br>
+5.1/layout/css-grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://getbootstrap.com/docs/5.1/layout/css-grid/" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[17]&nbsp;&nbsp;&nbsp;&nbsp;"Grid by Example - Usage examples of CSS Grid Layout." <i>gridbyexample.com</i>. [Online]. Available: https://gridbyexample.com/<br>
+examples/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://gridbyexample.com/examples/" target="_blank"><span style="font-size:18px;"><b><i>Grid by Example - Usage examples of CSS Grid Layout.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[18]&nbsp;&nbsp;&nbsp;&nbsp;"Grid," <i>web.dev</i>. [Online]. Available: https://web.dev/learn/css/grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://web.dev/learn/css/grid/" target="_blank"><span style="font-size:18px;"><b><i>Grid,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[19]&nbsp;&nbsp;&nbsp;&nbsp;O. Nzube, "How to Use CSS Grid Layout 
+&#8211; Grid Properties Explained with Examples," 
+<i>freeCodeCamp.org</i>, 25-May-2022. [Online]. Available: https://www.freecodecamp.org/<br>
+news/how-to-use-css-grid-layout/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.freecodecamp.org/news/how-to-use-css-grid-layout/" target="_blank"><span style="font-size:18px;"><b><i>How to Use CSS Grid Layout &#8211; Grid Properties Explained with Examples,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[20]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Grid &#8211; Table layout is back. Be there and be square," <i>Chrome Developers</i>, 27-Jan-2017. [Online]. Available: https://developer.chrome.com/<br>
+blog/css-grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.chrome.com/blog/css-grid/" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid 
+&#8211; Table layout is back. Be there and be square,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[21]&nbsp;&nbsp;&nbsp;&nbsp;"HTTP Messages." <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/<br>
+tags/ref_httpmessages.asp. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/tags/ref_httpmessages.asp" target="_blank"><span style="font-size:18px;"><b><i>HTTP Messages.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[22]&nbsp;&nbsp;&nbsp;&nbsp;“PHP: PHP Software.” <i>www.php.net</i>. 
+[Online]. Available: https://www.php.net/software.php. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.php.net/software.php" target="_blank"><span style="font-size:18px;"><b><i>PHP: PHP Software.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[23]&nbsp;&nbsp;&nbsp;&nbsp;“PHP: Download Logos.” <i>www.php.net</i>. [Online]. Available: https://www.php.net/download-logos.php. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.php.net/download-logos.php" target="_blank"><span style="font-size:18px;"><b><i>PHP: Download Logos.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[24]&nbsp;&nbsp;&nbsp;&nbsp;“Creative Commons — Attribution-ShareAlike 4.0 International — CC BY-SA 4.0.” <i>creativecommons.org</i>. [Online]. Available: https://creativecommons.org/licenses/by-sa/4.0/. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><span style="font-size:18px;"><b><i>Creative Commons — Attribution-ShareAlike 4.0 International — CC BY-SA 4.0.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[25]&nbsp;&nbsp;&nbsp;&nbsp;“PHP Exercises, Practice, Solution,” <i>w3resource</i>, 19-Aug-2022. 
+[Online]. Available: https://www.w3resource.com/php-exercises/index.php. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3resource.com/php-exercises/index.php" target="_blank"><span style="font-size:18px;"><b><i>PHP Exercises, Practice, Solution,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[26]&nbsp;&nbsp;&nbsp;&nbsp;“PHP Exercise: Get the information about the operating system PHP is running on,” <i>w3resource</i>, 19-Aug-2022. 
+[Online]. Available: https://www.w3resource.com/php-exercises/php-basic-exercise-26.php. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3resource.com/php-exercises/php-basic-exercise-26.php" target="_blank"><span style="font-size:18px;"><b><i>PHP Exercise: Get the information about the operating system PHP is running on,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[27]&nbsp;&nbsp;&nbsp;&nbsp;“PHP Tutorial.” <i>W3schools</i>. 
+[Online]. Available: https://www.w3schools.com/php/. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/php/" target="_blank"><span style="font-size:18px;"><b><i>PHP Tutorial.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[28]&nbsp;&nbsp;&nbsp;&nbsp;“Learn PHP Tutorial - javatpoint,” 
+<i>Javatpoint</i>.  [Online]. Available: https://www.javatpoint.com/php-tutorial. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.javatpoint.com/php-tutorial" target="_blank"><span style="font-size:18px;"><b><i>Learn PHP Tutorial - javatpoint,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[29]&nbsp;&nbsp;&nbsp;&nbsp;“PHP Tutorial.” <i>Tutorials Point</i>. 
+[Online]. Available: https://www.tutorialspoint.com/php/index.htm. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.tutorialspoint.com/php/index.htm" target="_blank"><span style="font-size:18px;"><b><i>PHP Tutorial.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[30]&nbsp;&nbsp;&nbsp;&nbsp;“PHP Tutorial,” <i>PHP Tutorial</i>. 
+[Online]. Available: https://www.phptutorial.net/. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.phptutorial.net/" target="_blank"><span style="font-size:18px;"><b><i>PHP Tutorial,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[31]&nbsp;&nbsp;&nbsp;&nbsp;“Learn PHP,” <i>Codecademy</i>. 
+[Online]. Available: https://www.codecademy.com/learn/paths/php-skill. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.codecademy.com/learn/paths/php-skill" target="_blank"><span style="font-size:18px;"><b><i>Learn PHP,</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[32]&nbsp;&nbsp;&nbsp;&nbsp;“PHP Tutorial - Learn PHP,” <i>GeeksforGeeks</i>. [Online]. Available: https://www.geeksforgeeks.org/php-tutorial/. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.geeksforgeeks.org/php-tutorial/" target="_blank"><span style="font-size:18px;"><b><i>PHP Tutorial - Learn PHP,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[33]&nbsp;&nbsp;&nbsp;&nbsp;“PHP: phpinfo - Manual.” <i>www.php.net</i>. [Online]. Available: https://www.php.net/manual/en/function.phpinfo.php. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.php.net/manual/en/function.phpinfo.php" target="_blank"><span style="font-size:18px;"><b><i>PHP: phpinfo - Manual.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[34]&nbsp;&nbsp;&nbsp;&nbsp;“How to Easily Create and Use a phpinfo Page (In 3 Steps),” <i>Kinsta&#174;</i>, 14-Dec-2022. [Online]. Available: https://kinsta.com/knowledgebase/phpinfo/. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://kinsta.com/knowledgebase/phpinfo/" target="_blank"><span style="font-size:18px;"><b><i>How to Easily Create and Use a phpinfo Page (In 3 Steps),</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[35]&nbsp;&nbsp;&nbsp;&nbsp;“PHP Date and Time.” <i>W3schools</i>. 
+[Online]. Available: https://www.w3schools.com/php/php_date.asp. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/php/php_date.asp" target="_blank"><span style="font-size:18px;"><b><i>PHP Date and Time.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[36]&nbsp;&nbsp;&nbsp;&nbsp;admin, “PHP program to check prime number,” <i>W3schools</i>, 21-Aug-2018. [Online]. Available: https://www.w3schools.blog/php-program-to-check-prime-number. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.blog/php-program-to-check-prime-number" target="_blank"><span style="font-size:18px;"><b><i>PHP program to check prime number,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[37]&nbsp;&nbsp;&nbsp;&nbsp;“https://leetcode.com/problems/fizz-buzz/description,” <i>LeetCode</i>. 
+[Online]. Available: https://leetcode.com/problems/fizz-buzz/description. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://leetcode.com/problems/fizz-buzz/description" target="_blank"><span style="font-size:18px;"><b><i>https://leetcode.com/problems/fizz-buzz/description,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[38]&nbsp;&nbsp;&nbsp;&nbsp;“Fizz Buzz Implementation,” <i>GeeksforGeeks</i>, 23-May-2017. 
+[Online]. Available: https://www.geeksforgeeks.org/fizz-buzz-implementation/. [Accessed: 02-Jul-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.geeksforgeeks.org/fizz-buzz-implementation/" target="_blank"><span style="font-size:18px;"><b><i>Fizz Buzz Implementation,</i></b></span></a><br><br>
+
+
+
+
+
+<br><br>
+
+
+
+</center>
+<br>
+
+
+       </div>
+    </center>
+
+
+    <p>
+       <br>
+    </p>
+
+<center>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</center><br>
+
+</div>
+
+
+
