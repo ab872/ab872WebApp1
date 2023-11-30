@@ -97,14 +97,14 @@ for (counter = 1; counter <= 100; counter++) {
 
 
    if ( (counter%3) === 0 )
-   {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   {
       divisibleBy3 = true;
-   }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   }
 
    if ( (counter%5) === 0 )
-   {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   {
       divisibleBy5 = true;
-   }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   }
 
 
 if ( divisibleBy3 && divisibleBy5 ) {
@@ -117,7 +117,7 @@ if ( divisibleBy3 && divisibleBy5 ) {
    '&lt;/b>';
 
    //  End   divisible by both 3 and 5
-}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}
 
 if ( divisibleBy3 && !divisibleBy5 ) {
    //  Start   divisible by 3 only
@@ -129,7 +129,7 @@ if ( divisibleBy3 && !divisibleBy5 ) {
    '&lt;/b>';
 
    //  End   divisible by 3 only
-}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}
 
 
 
@@ -140,18 +140,18 @@ if ( !divisibleBy3 && divisibleBy5 ) {
    '&nbsp;&nbsp;&nbsp;' + 
    '&lt;b>' + 
    "BUZZ" + 
-   '&lt;b>';
+   '&lt;/b>';
 
    //  End   divisible by 5 only
-}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}
 
 
 
    text2display = text2display + 
    "&lt;br>";            
 
-   //   end for loop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   //   end for loop
+}
 
 
 
@@ -421,6 +421,459 @@ echo "BUZZ";
 </center><br>
 
 <br><br>
+
+
+
+
+
+
+<center> 
+<span id="codeLanguageTitle3" style="color:Navy;font-size:54px;"><b>80x86 Assembly Language</b></span>
+</center><br>
+
+<center>
+<div class="grid-containerCode3">
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeText" style="color:Black;font-size:15px;">
+<pre>
+; Talk about a blast from the past.
+;
+; This is the game of FizzBuzz in 80x86 assembly language.
+; Assemble the code using NASM ( https://www.nasm.us/ ).
+; It generates a COM file. COM files were a simple executable
+; file format for IBM PC DOS or Microsoft MS-DOS. COM files
+; are limited in that the program code and data must fit into a
+; single 64K byte segment. They do not contain a header with
+; information for relocation, so they are no longer supported by
+; recent versions of Microsoft Windows. COM files were often used
+; from the early 1980s until Microsoft Windows no longer supported
+; them beginning in the early 2000's.
+;
+; 32-bit Windows still appears to have support for emulating
+; MS-DOS, but modern Windows versions (64-bit) no longer support
+; the format, so it is necessary to use an external DOS emulator
+; in order to run this type of executable file.
+;
+; DOS emulators such as DOSBox ( https://www.dosbox.com/ ), or
+; FreeDOS ( https://www.freedos.org/ ) are available for this.
+;
+;
+;
+org 100h	; required entry point for COM executables
+
+start:
+	mov cx, 1		; initialize cx for the counter,
+				; going from 1 to 100
+
+mainloop:
+
+	call getcount		; get the counter value and convert
+				; it to a string for display
+	lea dx, [countmsg]      ; print the count message
+	call printmsg
+
+	call printcount         ; print the counter as a string
+
+divisibleby3:
+	mov ax, cx              ; copy cx to ax to perform the Modulo operation
+
+	mov  bl, 03h            ; is ax divisible by 3?
+	div bl                  ; al = quotient  ( ax / divisor )
+                                ; ah =  remainder  ( ax MOD divisor )
+	cmp ah, 00h		; if it's MOD 0, then it's divisible by 3
+	je dividesby3		; jump to the routine to print the message
+
+
+divisibleby5:
+	mov ax, cx              ; copy cx to ax to perform the Modulo operation 
+
+	mov  bl, 05h            ; is ax divisible by 5?
+	div bl                  ; al = quotient  ( ax / divisor )
+                                ; ah =  remainder  ( ax MOD divisor )
+	cmp  ah, 00h		; if it's MOD 0, then it's divisible by 5
+	je dividesby5		; jump to the routine to print the message
+
+
+incrementindex:
+	call printcrlf		; print the sequence &lt;CR>&lt;LF> to end the line
+				; of text
+
+	inc cx  		; increment the loop counter
+	cmp cx, 100		; have we reached 100 yet?
+	jbe mainloop		; not yet, so loop again
+	jmp exit		; we've reached 100, so exit the program
+
+
+
+dividesby3:
+	call printfizz		; print "FIZZ" since it's divisible by 3
+	jmp divisibleby5	; jump to the next action to perform
+				; ie; check if it's divisible by 5
+
+dividesby5:
+	call printbuzz 		; print "BUZZ" since it's divisible by 5
+	jmp incrementindex	; jump to the next action to perform
+				; ie; check if we've reached 100 yet
+
+
+printfizz:		      	; print the message showing divisible by 3
+	lea dx, [fizzmsg]       ; the address of the message to print in dx
+	call printmsg           ; call the subroutine to print the message
+	ret
+
+printbuzz:			; print the message showing divisible by 5
+	lea dx, [buzzmsg]       ; the address of the message to print in dx
+	call printmsg           ; call the subroutine to print the message
+	ret
+
+printcrlf:			; print the sequence &lt;CR>&lt;LF> to end the line
+				; of text
+	lea dx, [crlfmsg]       ; the address of the message to print in dx
+	call printmsg           ; call the subroutine to print the message
+	ret
+
+
+
+printmsg:			; print a message to the screen
+	mov  ah, 9           	; the BDOS function to print a $ terminated 
+				; string
+                             	; DX must point to the string before calling 
+				; this subroutine 
+	int  21h             	; call the BDOS 
+	ret
+
+
+
+printcount:
+; prints the value of the counter to the screen
+; before calling this, we must call get count in
+; order to convert the counter value to a 3 byte string
+; ( 000 to 255 )
+;
+	lea dx, [counter]      ;  print the counter string
+	call printmsg                               
+	ret
+
+
+
+getcount:
+; Converts the count in cx to a format which
+; can be displayed on the screen.
+; al must contain the byte to display.	
+;
+; The value of the byte ranges from 0 to 255.
+; We store the value as a 3 byte text string
+; which is terminated by a "$". We insert 3
+; spaces   ( db    "   " ) before the "$" in 
+; order to format the text prior to announcing 
+; "FIZZ", "BUZZ" or "FIZZBUZZ". 
+;
+; In order to obtain the hundreds digit, we divide 
+; the counter value by one hundred. We convert it to
+; a displayable character and store it as the first 
+; digit of the string.
+;
+; The we subtract the hundreds from the counter.
+; For example:   255 - 200 = 55.
+;
+; In order to obtain the tens digit, we divide 
+; the new counter value by ten. We convert it to a 
+; displayable character and store it as the second
+; digit of the string.
+;
+; The we subtract the tens from the counter.
+; For example:   55 - 50 = 5.
+;
+; We convert it to a displayable character and store
+; it as the third digit of the string.
+;
+; 
+;											
+	mov ax, cx             ; get the count
+	mov bl, 100            ; divisible by 100?
+	div bl                 ; al = al / 100
+	add al, 30h            ; add offset for printing to the screen
+	mov [byte1], al        ; copy the value to byte1 of the counter
+
+	sub al, 30h            ; remove the offset from al
+	mov bl, 100
+	mul bl                 ; al = al * 100
+	mov bl, al             ; move al to bl
+	mov ax, cx             ; restore the count to al
+	sub al, bl             ; subtract bl   ( al = al - 100s )
+
+	push ax                ; save the count minus the hundreds
+
+	mov bl, 10             ; divisible by 10?
+	div bl                 ; al = al / 10
+	add al, 30h            ; add offset for printing to the screen 
+	mov [byte2], al        ; copy the value to byte2 of the counter
+
+	sub al, 30h            ; remove the offset from al
+	mov bl, 10
+	mul bl                 ; al = al * 10
+	mov bl, al             ; move al to bl
+
+	pop ax                 ; restore the count minus the hundreds
+
+	sub al, bl             ; subtract bl   ( al = al - tens )
+
+	add al, 30h            ; add offset for printing to the screen 
+	mov [byte3], al        ; copy the value to byte3 of the counter
+
+	ret
+
+
+
+
+exit:
+	lea dx, [exitmsg]	;  print the exit message since we're finished
+	call printmsg     
+
+	lea dx, [crlfmsg]	; the address of the message to print in dx
+	call printmsg		; call the subroutine to print the message
+                          
+	mov  ah, 4ch		;   terminate the program 
+	int  21h		; call the  BDOS 
+
+
+	countmsg:        db    "The count is $"
+	fizzmsg:         db    "Fizz$"
+	buzzmsg:         db    "Buzz$"
+	exitmsg:	 db    "Exiting the program.$"
+	crlfmsg:         db     0dh,0ah,"$"
+        counter:
+        byte1:           db    "0"     ; 3 bytes to display the count value
+        byte2:           db    "0"
+        byte3:           db    "0"
+			 db    "   "
+        byte4:           db    "$"
+
+</pre>
+<br><br>
+</span>
+<br><br>
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeComments" style="color:Maroon;font-size:15px;">
+<b>Introduction</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>Start of program</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>Set up the loop</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>Is the count divisible by 3?</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>Is the count divisible by 5?</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>Print End of Line</b>
+<br>
+<br>
+<br>
+<br>
+<b>End of the loop?</b>
+<br>
+<br>
+<br>
+<b>Print FIZZ</b>
+<br>
+<br>
+<br>
+<br>
+<b>Print BUZZ</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>Print End of Line</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>Print the loop count</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>Convert the loop count to a string</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b>Exit the program</b>
+
+
+
+</span>
+<br><br>
+
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <!--  end of grid container Code 3 -->
+</div>
+</center><br>
+
+<br><br>
+
+
 
 
 <span style="color:Navy;font-size:56px;"><b>References</b></span><br><br>
