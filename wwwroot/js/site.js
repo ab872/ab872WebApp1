@@ -3623,6 +3623,18 @@ newWindow.document.write(displayStrEnd);
 
 //   *******************************************************
 
+function doNothing() { 	 
+
+   //  alert("called function doNothing");
+
+ // end function     doNothing()
+} 
+
+
+//   *******************************************************
+
+
+
 // 
 
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SaEtezlMJrPFeTSNxin3j2ouSiZGB1dhEwqHS03nz7m5VBLwRXd9NIhLTxqEmkQcvhtYgL9rgHlZ3/yGg7bVhg==",
+  "dgSpecHash": "69OV/dITqVbWG2VP3GwMdsdE/DaLA8zrpr05GtZ3gWtPaZYozlpNLUnZ470fVH/Cs/ZMAYN0+kFE+mEqvdt2Mg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_30nov2023\\ab872WebApp1\\webApp1.csproj",
+  "projectFilePath": "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_05dec2023\\ab872WebApp1\\webApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tonyb\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\tonyb\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
