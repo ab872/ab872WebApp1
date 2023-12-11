@@ -136,7 +136,28 @@ body {
 
 
 
-.grid-containerCode1 {
+
+.grid-containerCodeCsharp {
+     border: 3px solid rgb(211, 211, 211, 1.0); 
+     width:75%;   
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 9fr 2fr 0.5fr;
+     grid-template-rows: 0.5vh 160vh 0.5vh; 
+}
+
+.grid-containerCodeJava {
+     border: 3px solid rgb(211, 211, 211, 1.0); 
+     width:75%;   
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 9fr 2fr 0.5fr;
+     grid-template-rows: 0.5vh 150vh 0.5vh; 
+}
+
+
+
+.grid-containerCodeJavaScript {
      border: 3px solid rgb(211, 211, 211, 1.0); 
      width:75%;   
      display: grid;
@@ -146,7 +167,7 @@ body {
 }
 
 
-.grid-containerCode2 {
+.grid-containerCodePHP {
      border: 3px solid rgb(211, 211, 211, 1.0); 
      width:75%;   
      display: grid;
@@ -156,7 +177,7 @@ body {
 }
 
 
-.grid-containerCode3 {
+.grid-containerCode80x86AssemblyLanguageMsDos {
      border: 3px solid rgb(211, 211, 211, 1.0); 
      width:75%;   
      display: grid;
