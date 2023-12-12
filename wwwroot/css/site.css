@@ -136,6 +136,16 @@ body {
 
 
 
+.grid-containerCodeC {
+     border: 3px solid rgb(211, 211, 211, 1.0); 
+     width:75%;   
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 9fr 2fr 0.5fr;
+     grid-template-rows: 0.5vh 140vh 0.5vh; 
+}
+
+
 
 .grid-containerCodeCsharp {
      border: 3px solid rgb(211, 211, 211, 1.0); 
