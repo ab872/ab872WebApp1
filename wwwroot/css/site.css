@@ -187,6 +187,18 @@ body {
 }
 
 
+.grid-containerCodePython {
+     border: 3px solid rgb(211, 211, 211, 1.0); 
+     width:75%;   
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 9fr 2fr 0.5fr;
+     grid-template-rows: 0.5vh 100vh 0.5vh; 
+}
+
+
+
+
 .grid-containerCode80x86AssemblyLanguageMsDos {
      border: 3px solid rgb(211, 211, 211, 1.0); 
      width:75%;   
