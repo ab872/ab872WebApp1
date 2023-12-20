@@ -1,0 +1,57 @@
+WEBVTT
+
+NOTE This is a comment
+
+NOTE this file derived from the following references
+
+NOTE
+https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
+
+NOTE
+https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API
+
+NOTE insert the track in the video element like this
+
+NOTE  video controls autoplay src="video.webm"   track default src="earlySVGvideo.vtt"
+video
+
+NOTE cues are navy on light gray
+
+STYLE
+::cue {
+  background:lightgray;color:navy;
+}
+/* Style blocks cannot use blank lines 
+nor "dash dash greater than" */
+
+NOTE comment blocks can be used between style blocks.
+
+NOTE bold cues are maroon
+
+STYLE
+::cue(b) {
+  color:maroon;
+}
+
+NOTE Animation 1 has no sound
+
+1
+00:01:40.500 --> 00:02:52.500 position:50% line:80% align:center size:99%
+This section of the video intentionally has no sound
+
+NOTE Animation 2 has no sound
+
+1
+00:05:24.500 --> 00:06:09.500 position:50% line:80% align:center size:99%
+This section of the video intentionally has no sound
+
+NOTE Animation 3 has no sound
+
+1
+00:06:23.000 --> 00:06:58.500 position:50% line:80% align:center size:99%
+This section of the video intentionally has no sound
+
+
+  
+
+  

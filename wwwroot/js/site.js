@@ -3634,6 +3634,74 @@ function doNothing() {
 //   *******************************************************
 
 
+var videoPlayer1 = document.getElementById('earlySVGvideoPlayer'); 
+
+var sliderVolume = document.getElementById('volumeSlider'); 
+
+var volume = document.getElementById('volumeSlider').value; 
+
+videoPlayer1.volume = volume; 
+
+
+
+
+
+sliderVolume.oninput = function () {
+
+volume = document.getElementById('volumeSlider').value; 
+
+videoPlayer1.volume = volume; 
+
+//  end     function oninput
+}
+
+
+
+function increaseVolume() { 
+
+volume += 0.1; 
+
+if ( volume > 1.00 ) {
+    volume = 1.00;
+}
+
+document.getElementById('volumeSlider').value = volume; 
+
+videoPlayer1.volume = volume; 
+
+//  end     function increase volume
+} 
+
+
+
+function decreaseVolume() { 
+
+volume -= 0.1; 
+
+if ( volume < 0 ) {
+     volume = 0;
+}
+
+document.getElementById('volumeSlider').value = volume; 
+
+videoPlayer1.volume = volume; 
+
+//  end       function decrease volume
+} 
+
+
+function muteVolume() { 
+
+volume = 0; 
+
+document.getElementById('volumeSlider').value = volume; 
+
+videoPlayer1.volume = 0; 
+
+//  end     function mute volume
+} 
+
+//   *******************************************************
 
 // 
 

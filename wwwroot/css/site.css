@@ -266,6 +266,19 @@ div.scrollingReferences1 {
 }        
 
 
+div.earlySVGscrollingReferences1 {
+   margin:5px,5px;
+   padding:5px;
+   background-color:aliceblue;
+   width:96%;
+   height:300px;
+   overflow-x:hidden; 
+   overflow-y:auto;
+   text-align:justify;
+}        
+
+
+
 
 div.codeFizzBuzzScrollingText1 {
    margin:5px,5px;
@@ -304,10 +317,10 @@ div.colorPickerScrollingTable1 {
 
 
 
-
 input[type='range'] {
     -webkit-appearance: none;
     -moz-appearance: none;
+    vertical-align: middle;
     border-radius: 5px;
     border: 3px solid #808080;
 }
