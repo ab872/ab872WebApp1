@@ -3634,40 +3634,83 @@ function doNothing() {
 //   *******************************************************
 
 
-var videoPlayer1 = document.getElementById('earlySVGvideoPlayer'); 
+function initializeVolume() {
 
-var sliderVolume = document.getElementById('volumeSlider'); 
+    var volume = 0.5;
 
-var volume = document.getElementById('volumeSlider').value; 
+    //  alert("initial volume = " + volume);
 
-videoPlayer1.volume = volume; 
+    var videoPlayer1 = document.getElementById('earlySVGvideoPlayer'); 
 
+    var sliderVolume = document.getElementById('earlySVGvolumeSlider'); 
 
+    volume = document.getElementById('earlySVGvolumeSlider').value; 
+
+    //  alert("after get element by ID   volume = " + volume);
+
+    videoPlayer1.volume = volume; 
+
+    //  alert("video player 1 volume = " + videoPlayer1.volume);
+
+//  end     function initializeVolume
+}
 
 
 
 sliderVolume.oninput = function () {
 
-volume = document.getElementById('volumeSlider').value; 
+    //  alert("volume slider has changed");
 
-videoPlayer1.volume = volume; 
+    volume = document.getElementById('earlySVGvolumeSlider').value; 
+
+    //  alert("volume = " + volume);
+
+    videoPlayer1.volume = volume; 
 
 //  end     function oninput
 }
 
+function sliderChanged() {
+    //  alert("volume slider has changed");
+    var sliderVolume = document.getElementById('earlySVGvolumeSlider'); 
+
+    volume = document.getElementById('earlySVGvolumeSlider').value; 
+
+    //  alert("volume = " + volume);
+
+    videoPlayer1.volume = volume;
+ 
+   //   end     function sliderChanged
+}
 
 
 function increaseVolume() { 
 
-volume += 0.1; 
+    //  alert("increase the volume");
 
-if ( volume > 1.00 ) {
-    volume = 1.00;
-}
+    var videoPlayer1 = document.getElementById('earlySVGvideoPlayer'); 
 
-document.getElementById('volumeSlider').value = volume; 
+    var sliderVolume = document.getElementById('earlySVGvolumeSlider'); 
 
-videoPlayer1.volume = volume; 
+    volume = document.getElementById('earlySVGvolumeSlider').value; 
+
+    //  alert("after get element by ID   volume = " + volume);
+
+    volume += 0.1; 
+
+    if ( volume > 1.00 ) {
+       volume = 1.00;
+    }
+
+    document.getElementById('earlySVGvolumeSlider').value = volume; 
+
+    //  alert("volume = " + volume);
+
+
+    videoPlayer1.volume = volume; 
+
+    //  alert("video player 1 volume = " + videoPlayer1.volume);
+
 
 //  end     function increase volume
 } 
@@ -3676,15 +3719,32 @@ videoPlayer1.volume = volume;
 
 function decreaseVolume() { 
 
-volume -= 0.1; 
+    //  alert("decrease the volume");
 
-if ( volume < 0 ) {
-     volume = 0;
-}
+    var videoPlayer1 = document.getElementById('earlySVGvideoPlayer'); 
 
-document.getElementById('volumeSlider').value = volume; 
+    var sliderVolume = document.getElementById('earlySVGvolumeSlider'); 
 
-videoPlayer1.volume = volume; 
+    volume = document.getElementById('earlySVGvolumeSlider').value; 
+
+    //  alert("after get element by ID   volume = " + volume);
+
+
+
+    volume -= 0.1; 
+
+    if ( volume < 0 ) {
+       volume = 0;
+    }
+
+    document.getElementById('earlySVGvolumeSlider').value = volume; 
+
+    //  alert("volume = " + volume);
+
+
+    videoPlayer1.volume = volume; 
+
+    //  alert("video player 1 volume = " + videoPlayer1.volume);
 
 //  end       function decrease volume
 } 
@@ -3692,11 +3752,28 @@ videoPlayer1.volume = volume;
 
 function muteVolume() { 
 
-volume = 0; 
+    //  alert("mute the volume");
 
-document.getElementById('volumeSlider').value = volume; 
+    var videoPlayer1 = document.getElementById('earlySVGvideoPlayer'); 
 
-videoPlayer1.volume = 0; 
+    var sliderVolume = document.getElementById('earlySVGvolumeSlider'); 
+
+    volume = document.getElementById('earlySVGvolumeSlider').value; 
+
+    //  alert("after get element by ID   volume = " + volume);
+
+
+
+    volume = 0; 
+
+    document.getElementById('earlySVGvolumeSlider').value = volume; 
+
+    //  alert("volume = " + volume);
+
+
+    videoPlayer1.volume = 0; 
+
+    //  alert("video player 1 volume = " + videoPlayer1.volume);
 
 //  end     function mute volume
 } 

@@ -266,6 +266,18 @@ div.scrollingReferences1 {
 }        
 
 
+div.demosScrollingLinks1 {
+   margin:5px,5px;
+   padding:5px;
+   background-color:aliceblue;
+   width:96%;
+   height:300px;
+   overflow-x:hidden; 
+   overflow-y:auto;
+   text-align:justify;
+}        
+
+
 div.earlySVGscrollingReferences1 {
    margin:5px,5px;
    padding:5px;
