@@ -3634,47 +3634,14 @@ function doNothing() {
 //   *******************************************************
 
 
-function initializeVolume() {
-
-    var volume = 0.5;
-
-    //  alert("initial volume = " + volume);
+function sliderChanged() {
+    //  alert("sliderChanged - volume slider has changed");
 
     var videoPlayer1 = document.getElementById('earlySVGvideoPlayer'); 
 
     var sliderVolume = document.getElementById('earlySVGvolumeSlider'); 
 
-    volume = document.getElementById('earlySVGvolumeSlider').value; 
-
-    //  alert("after get element by ID   volume = " + volume);
-
-    videoPlayer1.volume = volume; 
-
-    //  alert("video player 1 volume = " + videoPlayer1.volume);
-
-//  end     function initializeVolume
-}
-
-
-
-sliderVolume.oninput = function () {
-
-    //  alert("volume slider has changed");
-
-    volume = document.getElementById('earlySVGvolumeSlider').value; 
-
-    //  alert("volume = " + volume);
-
-    videoPlayer1.volume = volume; 
-
-//  end     function oninput
-}
-
-function sliderChanged() {
-    //  alert("volume slider has changed");
-    var sliderVolume = document.getElementById('earlySVGvolumeSlider'); 
-
-    volume = document.getElementById('earlySVGvolumeSlider').value; 
+    var volume = document.getElementById('earlySVGvolumeSlider').value; 
 
     //  alert("volume = " + volume);
 
