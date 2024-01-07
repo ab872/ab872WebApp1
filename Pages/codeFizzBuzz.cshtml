@@ -1047,6 +1047,272 @@ print("End of program.")
 
 
 <center> 
+<span id="codeLanguageTitle80x86AssemblyLanguageWin32a" style="color:Navy;font-size:54px;"><b>80x86 Assembly Language</b></span><br>
+<span id="codeLanguageTitle80x86AssemblyLanguageWin32b" style="color:Navy;font-size:54px;"><b>(Win32)</b></span>
+</center><br>
+
+<center>
+<div class="grid-containerCode80x86AssemblyLanguageWin32">
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeText" style="color:Black;font-size:15px;">
+<pre>
+
+; This is the game of FizzBuzz in 80x86 assembly language under Win32.
+;
+; Assemble the code using NASM.
+;
+
+
+	global _main
+	extern _printf		
+	extern ExitProcess	
+
+	segment .data
+
+	countmsg         db    	'The count is ', 0
+	fizzmsg          db    	'Fizz', 0
+	buzzmsg          db    	'Buzz', 0
+	crlfmsg          db     0dh,0ah,0
+	exitmsg:	 db    	'Exiting the program ...', 0
+        counter:
+        byte1:           db     '0'     ; 3 bytes to display the count value
+        byte2:           db     '0'
+        byte3:           db     '0'
+			 db     '   '   ; space for formatting
+        byte4:           db     0	; the string needs to be terminated with a 0
+
+
+
+	;  code
+	section .text
+
+_main:
+
+start:
+	mov cx, 1                 ; initialize cx for the counter, 1 to 100      
+
+mainloop:
+	push cx			  ;  save cx
+
+	call getcount
+
+	push cx	
+	push countmsg		  ;  display the count message
+	call _printf
+	add esp, 4                         
+	pop cx
+
+	push cx
+	call printcount		  ;  display the count value
+	pop cx
+
+divisibleby3:                     
+
+	mov ax, cx              ; copy the count in cx to ax to perform the Modulo operation 
+
+	mov  bl, 03h            ; is ax divisible by 3?
+	div bl                  ; al = quotient  ( ax / divisor )
+                                ; ah =  remainder  ( ax MOD divisor )
+	cmp ah, 00h		; if MOD = 0, then the count is divisible by 3
+	je dividesby3
+
+divisibleby5:
+
+	mov ax, cx              ; copy the count in cx to ax to perform the Modulo operation 
+
+	mov  bl, 05h            ; is ax divisible by 5?
+	div bl                  ; al = quotient  ( ax / divisor )
+                                ; ah =  remainder  ( ax MOD divisor )
+	cmp  ah, 00h		; if MOD = 0, then the count is divisible by 5
+	je dividesby5
+
+
+incrementindex:
+
+	call printcrlf		; print the &lt;CR>&lt;LF> sequence to terminate the line of text
+
+
+	pop cx			; restore the count in cx which we saved at the top of the loop
+
+	inc cx  
+	cmp cx, 100		; has the count reached 100?
+	jbe mainloop		; if the count has not exceeded 100, then repeat the loop
+	jmp exit		; the count has exceeded 100, exit the program
+
+
+
+dividesby3:
+  
+	call printfizz   	; divisible by 3, so print 'FIZZ'        
+	jmp divisibleby5	; go check now if divisible by 5
+
+dividesby5:
+
+	call printbuzz 		; divisible by 5, so print 'BUZZ'
+	jmp incrementindex	; go check now if we have reached 100
+
+
+printfizz:
+
+	push cx
+	push fizzmsg
+	call _printf
+	add esp, 4
+	pop cx
+	ret
+
+printbuzz:
+
+	push buzzmsg
+	call _printf
+	add esp, 4
+	ret
+
+printcrlf:
+
+	push crlfmsg		; print the &lt;CR>&lt;LF> sequence to terminate the line of text
+	call _printf
+	add esp, 4
+	ret
+
+
+
+
+printcount:
+; prints the value of the counter to the screen
+  
+	push counter
+	call _printf
+	add esp, 4                          
+	ret
+
+
+
+getcount:
+; converts the count in cx to a format which
+; can be displayed on the screen
+; al must contain the byte to display	
+											
+	mov ax, cx             ; get the count
+	mov bl, 100            ; divisible by 100?
+	div bl                 ; al = al / 100
+	add al, 30h            ; add offset for printing to the screen
+	mov [byte1], al        ; copy the value to byte1 of the counter
+
+	sub al, 30h            ; remove the offset from al
+	mov bl, 100
+	mul bl                 ; al = al * 100
+	mov bl, al             ; move al to bl
+	mov ax, cx             ; restore the count to al
+	sub al, bl             ; subtract bl   ( al = al - (al * 100) )
+
+	push ax                ; save the count minus the hundreds
+
+	mov bl, 10             ; divisible by 10?
+	div bl                 ; al = al / 10
+	add al, 30h            ; add offset for printing to the screen 
+	mov [byte2], al        ; copy the value to byte2 of the counter
+
+	sub al, 30h            ; remove the offset from al
+	mov bl, 10
+	mul bl                 ; al = al * 10
+	mov bl, al             ; move al to bl
+	pop ax                 ; restore the count minus the hundreds
+	sub al, bl             ; subtract bl   ( al = al - (al * 10) )
+
+	add al, 30h            ; add offset for printing to the screen 
+	mov [byte3], al        ; copy the value to byte3 of the counter
+
+	ret
+
+
+
+
+exit:
+
+	push exitmsg		; display message to indicate the end of the program
+	call _printf
+	add esp, 4
+
+	push crlfmsg		; print the &lt;CR>&lt;LF> sequence to terminate the line of text
+	call _printf
+	add esp, 4
+                          
+	push 0			;  terminate the program 
+	call	ExitProcess    
+
+</pre>
+<br><br>
+</span>
+<br><br>
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeComments" style="color:Maroon;font-size:15px;">
+<br>
+<br>
+<br>
+
+
+
+</span>
+<br><br>
+
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <!--  end of grid container Code 80x86 Assembly Language Win32 -->
+</div>
+</center><br><br>
+
+
+
+
+
+
+
+<center> 
 <span id="codeLanguageTitle80x86AssemblyLanguageMsDos" style="color:Navy;font-size:54px;"><b>80x86 Assembly Language</b></span><br>
 <span id="codeLanguageTitle80x86AssemblyLanguageMsDos" style="color:Navy;font-size:54px;"><b>(MS-DOS)</b></span>
 </center><br>
