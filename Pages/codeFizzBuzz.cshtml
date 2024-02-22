@@ -789,6 +789,160 @@ text2display + '&lt;br>';
 
 
 <center> 
+<span id="codeLanguageTitlePascal" style="color:Navy;font-size:54px;"><b>Pascal</b></span>
+</center><br>
+
+<center>
+<div class="grid-containerCodePascal">
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeText" style="color:Black;font-size:15px;">
+<pre>
+(*
+The Pascal programming language was created in the 1970s by
+Niklaus Wirth, who passed away January 01, 2024.
+
+Before the creation of Pascal, languages such as BASIC allowed
+the use of the GOTO statement. This meant that program execution
+could jump with almost no restrictions to any place within the code.
+This could result in what people called "spaghetti code", which was
+difficult to read and maintain.
+
+Pascal was an attempt to add logical structure to the software of the
+1970s. It became very popular in the 1980s with the release of Borland's
+Turbo Pascal for computers compatible with the IBM Personal Computer.
+
+Pascal predated Object-Oriented Programming, although in the 1980s
+a version called Object Pascal was adopted by Apple Computer. Support
+for Objects was added to Turbo Pascal in the late 1980s. Borland
+Delphi, which is still used today, also included support for Objects.
+
+This code sample was compiled using the
+
+Free Pascal Compiler version 3.2.2 (x86_64)
+
+www.freepascal.org
+
+Free Pascal supports its own version of Object Pascal,
+as well as Turbo Pascal / Borland Pascal and
+Borland (Embarcadero) Delphi, among others.
+*)
+
+
+program fizzBuzz(input, output, stdErr);
+
+uses sysUtils;
+
+var
+   count : integer;
+
+begin    (* Main *)
+
+    if(paramCount() > 0) then
+       begin
+             writeLn('FizzBuzz:');
+             writeLn('Output the numbers 1 to 100.');
+             writeLn('If the number is divisible by 3, output FIZZ.');
+             writeLn('If the number is divisible by 5, output BUZZ.');
+             writeLn('If the number is divisible by both 3 and 5, output FIZZBUZZ.');
+        end    (* paramCount > 0 *)
+        else 
+        begin    (* paramCount = 0 *)
+             writeLn('FizzBuzz');
+             writeLn('For help, type FizzBuzz -h.');
+             writeLn();
+             writeLn('FizzBuzz results:');
+
+             for count := 1 to 100 do
+                begin
+                   write('The count is ', inttostr( count ), '   ');
+             
+                   if(count mod 3 = 0) then      (*  divisible by 3 *)
+                      begin
+                         write('FIZZ');
+                      end;
+               
+                   if(count mod 5 = 0) then     (*  divisible by 5 *)
+                      begin
+                         write('BUZZ');
+                      end;
+               
+                   writeLn();       
+                end;    (* end   for loop *)
+  
+         end;    (* paramCount = 0 *)
+
+    writeLn('End of program.');
+                        
+ end.    (* Main *)
+
+</pre>
+</span>
+<br><br>
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeComments" style="color:Maroon;font-size:15px;">
+<b>&nbsp;</b>
+<br>
+</span>
+<br><br>
+
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <!--  end of grid container Code Pascal -->
+</div>
+</center><br>
+
+
+
+
+
+
+
+
+<center> 
 <span id="codeLanguageTitlePHP" style="color:Navy;font-size:54px;"><b>PHP</b></span>
 </center><br>
 
