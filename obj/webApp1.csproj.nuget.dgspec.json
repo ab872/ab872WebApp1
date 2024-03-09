@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_22feb2024\\ab872WebApp1\\webApp1.csproj": {}
+    "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_09mar2024\\ab872WebApp1\\webApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_22feb2024\\ab872WebApp1\\webApp1.csproj": {
+    "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_09mar2024\\ab872WebApp1\\webApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_22feb2024\\ab872WebApp1\\webApp1.csproj",
+        "projectUniqueName": "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_09mar2024\\ab872WebApp1\\webApp1.csproj",
         "projectName": "webApp1",
-        "projectPath": "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_22feb2024\\ab872WebApp1\\webApp1.csproj",
+        "projectPath": "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_09mar2024\\ab872WebApp1\\webApp1.csproj",
         "packagesPath": "C:\\Users\\tonyb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_22feb2024\\ab872WebApp1\\obj\\",
+        "outputPath": "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_09mar2024\\ab872WebApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tonyb\\AppData\\Roaming\\NuGet\\NuGet.Config"

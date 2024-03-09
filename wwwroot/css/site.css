@@ -218,6 +218,17 @@ body {
 }
 
 
+.grid-containerCodeRust {
+     border: 3px solid rgb(211, 211, 211, 1.0); 
+     width:75%;   
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+     grid-template-rows: 0.5vh 200vh 0.5vh; 
+}
+
+
+
 
 .grid-containerCode80x86AssemblyLanguageWin32 {
      border: 3px solid rgb(211, 211, 211, 1.0); 

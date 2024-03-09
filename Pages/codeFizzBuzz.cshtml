@@ -1197,6 +1197,145 @@ print("End of program.")
 </center><br><br>
 
 
+<!--   ************************************   -->
+
+
+<center> 
+<span id="codeLanguageTitlePHP" style="color:Navy;font-size:54px;"><b>Rust</b></span>
+</center><br>
+
+<center>
+<div class="grid-containerCodeRust">
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeText" style="color:Black;font-size:15px;">
+<pre>
+
+//  This code sample was written using the
+//  Rust Playground  ( https://play.rust-lang.org )
+//  
+//  The code was formatted using the Rustfmt tool.
+//  The code was Linted using the Clippy tool.
+//  Mid-level intermediate representation (MIR) verified
+//  using the Miri interpreter.
+//  
+
+use std::env;
+
+fn main() {
+    //  collect the command-line arguments into an array of strings
+    //  the length of the array indicates the number of arguments
+    //  The first argument is the path to call the program, so there
+    //  are no arguments unless the count is greater than 1.
+
+    let args: Vec<String> = env::args().collect();
+
+    if args.len() > 1 {
+        //  there are command-line arguments, explain how the program works
+        println!("FizzBuzz");
+        println!("'Output the numbers 1 to 100.");
+        println!("'If the number is divisible by 3, output FIZZ.");
+        println!("If the number is divisible by 5, output BUZZ.");
+        println!("If the number is divisible by both 3 and 5, output FIZZBUZZ.");
+
+        //   end     command-line arguments, explain how the program works
+    } else {
+        //  no command-line arguments, normal program operation
+        println!("FizzBuzz");
+        println!("For help, type FizzBuzz -h.");
+        println!();
+        println!("FizzBuzz results:");
+
+        for n in 1..=100 {
+            print!("The count is {:?}   ", n);
+
+            if n % 3 == 0 {
+                //  divisible by 3
+                print!("FIZZ");
+            }
+
+            if n % 5 == 0 {
+                //  divisible by 5
+                print!("BUZZ");
+            }
+
+            println!();     //  end the line of text
+
+            //   end     for loop
+        }
+
+        //   end     no command-line arguments
+    } 
+
+    //  Notify the user that the program has completed execution.
+    println!("End of program.");
+
+    //   end     fn main
+}
+
+</pre>
+</span>
+<br><br>
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeComments" style="color:Maroon;font-size:15px;">
+<b>&nbsp;</b>
+<br>
+<br>
+</span>
+<br><br>
+
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <!--  end of grid container Code Rust -->
+</div>
+</center><br>
+
+<br><br>
+
+<!--   ************************************   -->
 
 
 
