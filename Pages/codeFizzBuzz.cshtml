@@ -46,6 +46,151 @@ Output the numbers from 1 to 100.
 <br><br>
 
 
+<center> 
+<span id="codeLanguageTitleAda" style="color:Navy;font-size:54px;"><b>Ada</b></span>
+</center><br>
+
+<center>
+<div class="grid-containerCodeAda">
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeText" style="color:Black;font-size:14px;">
+<pre>
+
+--  Ada, which first appeared in 1980,  is a strongly typed language which 
+--  evolved from Pascal and other languages. Ada was originally used
+--  in embedded system programming. It is used for safety critical 
+--  development such as aviation and aerospace. Avionics software 
+--  development sometimes uses Ada in conjunction with DO-178B "Software 
+--  Considerations in Airborne Systems and Equipment Certification" ( 1992 ) or the 
+--  later DO-178C ( 2011 ) to maintain product safety. Ada was named after Ada 
+--  Lovelace (1815–1852).
+--
+--  This code sample was compiled using the GNAT Compiler ( x86_64-linux-gnu-gcc-9 ),
+--  which is part of the GNU Compiler Collection (GCC). The executable version of the
+--  software was created using GNATMAKE ( x86_64-linux-gnu-gnatmake-9 ).
+--  These tools were available online at 
+--
+--          https://onecompiler.com/ada
+--
+
+
+with
+Ada.Text_IO,
+Ada.Command_Line;
+
+use
+Ada.Text_IO,
+Ada.Command_Line;
+
+
+procedure Main is
+
+   count: Integer := 0;
+
+begin   
+
+    if(Argument_Count > 0) then
+             Ada.Text_IO.Put_Line ("FizzBuzz:");
+             Ada.Text_IO.Put_Line ("Output the numbers 1 to 100.");
+             Ada.Text_IO.Put_Line ("If the number is divisible by 3, output FIZZ.");
+             Ada.Text_IO.Put_Line ("If the number is divisible by 5, output BUZZ.");
+             Ada.Text_IO.Put_Line ("If the number is divisible by both 3 and 5, output FIZZBUZZ.");
+    else 
+             --  Argument_Count = 0 
+             Ada.Text_IO.Put_Line ("FizzBuzz");
+             Ada.Text_IO.Put_Line ("For help, type FizzBuzz -h.");
+             Ada.Text_IO.Put_Line ("");
+             Ada.Text_IO.Put_Line ("FizzBuzz results:");
+
+
+             for count in 1 .. 100 loop
+                   Ada.Text_IO.Put ("The count is " & Integer'Image(count) & "   ");   
+              
+                   if count mod 3 = 0 then      -- divisible by 3 
+                         Ada.Text_IO.Put ("FIZZ");
+                      end if;
+                
+                   if count mod 5 = 0 then     -- divisible by 5
+                         Ada.Text_IO.Put ("BUZZ");
+                      end if;
+               
+                   Ada.Text_IO.Put_Line ("");       
+               end loop;   
+
+         
+       end if;    --  Argument_Count = 0 
+
+
+       Ada.Text_IO.Put_Line ("End of program.");
+                        
+
+ end Main;     
+
+
+</pre>
+<br><br>
+
+</span>
+<br><br>
+     </div>
+
+     <div class="grid-itemCode">
+<span id="codeComments" style="color:Maroon;font-size:14px;">
+<br>
+<br>
+<br>
+
+</span>
+<br><br>
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+     <div class="grid-itemTopBottomCode">
+     </div>
+     <div class="grid-itemTopBottomCode">
+     </div>
+
+     <div class="grid-itemMarginCode">
+     </div>
+
+
+
+
+
+     <!--  end of grid container Code Ada -->
+</div>
+</center><br><br>
+
+
 
 
 <center> 
