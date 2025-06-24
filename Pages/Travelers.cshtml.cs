@@ -66,8 +66,10 @@ namespace webApp1.Pages_
                    //   end     catch
                 }
 
-
-
+//  *************************************************************
+//  temporary 
+//  works on the local machine, but not on the AZURE NGINX server
+//  *************************************************************
 
                //   Query data from the table
                var selectCmd = connection.CreateCommand();
