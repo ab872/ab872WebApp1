@@ -26,3 +26,129 @@ src="@Url.Content("~/videos/earlySVG872_14may2022_360.mp4")" type="video/mp4"> <
 
 </div>
 
+
+
+<script>
+
+//   *******************************************************
+
+
+function sliderChanged() {
+    //  alert("sliderChanged - volume slider has changed");
+
+    var videoPlayer1 = document.getElementById('earlySVGvideoPlayer'); 
+
+    var sliderVolume = document.getElementById('earlySVGvolumeSlider'); 
+
+    var volume = document.getElementById('earlySVGvolumeSlider').value; 
+
+    //  alert("volume = " + volume);
+
+    videoPlayer1.volume = volume;
+ 
+   //   end     function sliderChanged
+}
+
+
+function increaseVolume() { 
+
+    //  alert("increase the volume");
+
+    var videoPlayer1 = document.getElementById('earlySVGvideoPlayer'); 
+
+    var sliderVolume = document.getElementById('earlySVGvolumeSlider'); 
+
+    volume = document.getElementById('earlySVGvolumeSlider').value; 
+
+    //  alert("after get element by ID   volume = " + volume);
+
+    volume += 0.1; 
+
+    if ( volume > 1.00 ) {
+       volume = 1.00;
+    }
+
+    document.getElementById('earlySVGvolumeSlider').value = volume; 
+
+    //  alert("volume = " + volume);
+
+
+    videoPlayer1.volume = volume; 
+
+    //  alert("video player 1 volume = " + videoPlayer1.volume);
+
+
+//  end     function increase volume
+} 
+
+
+
+function decreaseVolume() { 
+
+    //  alert("decrease the volume");
+
+    var videoPlayer1 = document.getElementById('earlySVGvideoPlayer'); 
+
+    var sliderVolume = document.getElementById('earlySVGvolumeSlider'); 
+
+    volume = document.getElementById('earlySVGvolumeSlider').value; 
+
+    //  alert("after get element by ID   volume = " + volume);
+
+
+
+    volume -= 0.1; 
+
+    if ( volume < 0 ) {
+       volume = 0;
+    }
+
+    document.getElementById('earlySVGvolumeSlider').value = volume; 
+
+    //  alert("volume = " + volume);
+
+
+    videoPlayer1.volume = volume; 
+
+    //  alert("video player 1 volume = " + videoPlayer1.volume);
+
+//  end       function decrease volume
+} 
+
+
+function muteVolume() { 
+
+    //  alert("mute the volume");
+
+    var videoPlayer1 = document.getElementById('earlySVGvideoPlayer'); 
+
+    var sliderVolume = document.getElementById('earlySVGvolumeSlider'); 
+
+    volume = document.getElementById('earlySVGvolumeSlider').value; 
+
+    //  alert("after get element by ID   volume = " + volume);
+
+
+
+    volume = 0; 
+
+    document.getElementById('earlySVGvolumeSlider').value = volume; 
+
+    //  alert("volume = " + volume);
+
+
+    videoPlayer1.volume = 0; 
+
+    //  alert("video player 1 volume = " + videoPlayer1.volume);
+
+//  end     function mute volume
+} 
+
+
+//   *******************************************************
+
+
+</script>
+
+
+
