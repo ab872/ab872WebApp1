@@ -69,6 +69,22 @@ namespace webApp1.Pages_
 //  *************************************************************
 //  temporary    1234 1234
 //  works on the local machine, but not on the AZURE NGINX server
+//  the SELECT never returns any data, although it's there
+//  used the KUDU console to browse the files on the server.
+//  theres a file at 
+//               \home\site\wwwroot\travelers.db
+//
+//  but it appears to be an empty file
+//  when SQLite tries to access the file but can't find it,
+//  it creates the file. But it doesn't insert any data.
+//
+//  Let's see if we can copy the file to
+//              \wwwroot
+//
+//  and see if the SELECT returns any data
+//  the push has started returning an error 500 (internal server error)
+//  so I hope it will work.
+//
 //  *************************************************************
 
                //   Query data from the table
