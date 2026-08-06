@@ -14,8 +14,12 @@ namespace webApp1.Pages_
     {
         public static int clickCount;
 
-        public static int currentLongtitude;
-        public static int currentLattitude;
+        public static int currentLongtitude = 475;
+        public static int currentLattitude = 900;
+
+      //      Globals.currentLongtitude = 475;
+      //      Globals.currentLattitude = 900;
+
 
        //   end     class Globals
     }
@@ -26,8 +30,11 @@ namespace webApp1.Pages_
         [BindProperty]
         public string? Message { get; set; }
 
-        public int? currentLongtitude { get; set; }
-        public int? currentLattitude { get; set; }
+        public int currentLongtitude { get; set; }
+        public int currentLattitude { get; set; }
+
+   //     public int? currentLongtitude { get; set; }
+   //     public int? currentLattitude { get; set; }
 
 
         public List<UserRecord> Users { get; set; } = new List<UserRecord>();
@@ -462,7 +469,7 @@ namespace webApp1.Pages_
     public class UserRecord
     {
        public int id {get; set;}
-       public string name {get; set;}
+       public string name {get; set;} = string.Empty;
        public int age {get; set;}
 
        //   end     class UserRecord
@@ -471,7 +478,7 @@ namespace webApp1.Pages_
     public class GasRecord
     {
        public int gas_id {get; set;}
-       public string gas_status {get; set;}
+       public string gas_status {get; set;} = string.Empty;
 
        //   end     class Gas
     }
@@ -479,7 +486,7 @@ namespace webApp1.Pages_
     public class DieselRecord
     {
        public int diesel_id {get; set;}
-       public string diesel_status {get; set;}
+       public string diesel_status {get; set;} = string.Empty;
 
        //   end     class Diesel
     }
@@ -487,7 +494,7 @@ namespace webApp1.Pages_
     public class FoodRecord
     {
        public int food_id {get; set;}
-       public string food_status {get; set;}
+       public string food_status {get; set;} = string.Empty;
 
        //   end     class Food
     }
@@ -495,12 +502,12 @@ namespace webApp1.Pages_
     public class RestStopRecord
     {
        public int restStop_id {get; set;}
-       public string restStop_name {get; set;}
+       public string restStop_name {get; set;} = string.Empty;
        public int longtitude {get; set;}
        public int lattitude {get; set;}
-       public string gas {get; set;}
-       public string diesel {get; set;}
-       public string food {get; set;}
+       public string gas {get; set;} = string.Empty;
+       public string diesel {get; set;} = string.Empty;
+       public string food {get; set;} = string.Empty;
 
        //   end     class Rest_Stop
     }

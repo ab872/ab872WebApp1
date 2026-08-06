@@ -9950,25 +9950,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tonyb\\.nuget\\packages\\": {}
+    "C:\\Users\\tony\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_29jun2025\\ab872WebApp1\\webApp1.csproj",
+      "projectUniqueName": "C:\\Users\\tony\\tbdownloads\\repositories\\dotnet_files\\ab872WebApp1_nuc_06aug2026\\ab872WebApp1\\webApp1.csproj",
       "projectName": "webApp1",
-      "projectPath": "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_29jun2025\\ab872WebApp1\\webApp1.csproj",
-      "packagesPath": "C:\\Users\\tonyb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tonyb\\repositories\\dotnet_files\\working_files\\ab872WebApp1_nuc_29jun2025\\ab872WebApp1\\obj\\",
+      "projectPath": "C:\\Users\\tony\\tbdownloads\\repositories\\dotnet_files\\ab872WebApp1_nuc_06aug2026\\ab872WebApp1\\webApp1.csproj",
+      "packagesPath": "C:\\Users\\tony\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tony\\tbdownloads\\repositories\\dotnet_files\\ab872WebApp1_nuc_06aug2026\\ab872WebApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tonyb\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\tony\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10020,7 +10019,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.309/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
