@@ -9955,11 +9955,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tony\\tbdownloads\\repositories\\dotnet_files\\ab872WebApp1_nuc_06aug2026\\ab872WebApp1\\webApp1.csproj",
+      "projectUniqueName": "C:\\Users\\tony\\tbdownloads\\repositories\\dotnet_files\\ab872WebApp1_nuc_12aug2026\\ab872WebApp1\\webApp1.csproj",
       "projectName": "webApp1",
-      "projectPath": "C:\\Users\\tony\\tbdownloads\\repositories\\dotnet_files\\ab872WebApp1_nuc_06aug2026\\ab872WebApp1\\webApp1.csproj",
+      "projectPath": "C:\\Users\\tony\\tbdownloads\\repositories\\dotnet_files\\ab872WebApp1_nuc_12aug2026\\ab872WebApp1\\webApp1.csproj",
       "packagesPath": "C:\\Users\\tony\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tony\\tbdownloads\\repositories\\dotnet_files\\ab872WebApp1_nuc_06aug2026\\ab872WebApp1\\obj\\",
+      "outputPath": "C:\\Users\\tony\\tbdownloads\\repositories\\dotnet_files\\ab872WebApp1_nuc_12aug2026\\ab872WebApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tony\\AppData\\Roaming\\NuGet\\NuGet.Config"
