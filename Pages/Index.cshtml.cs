@@ -25,7 +25,7 @@ public class IndexModel : PageModel
                //  the correct location for the Azure App Service to find it.
                //  if we dont find the file, then copy it to the right location
                try {
-//                  Console.WriteLine("****************************************************************");
+                  Console.WriteLine("****************************************************************");
 //                  Console.WriteLine("Copy database file to correct location for Azure App Service ...");
 
 
