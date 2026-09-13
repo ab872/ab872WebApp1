@@ -1,9 +1,38 @@
+
+using Microsoft.AspNetCore.StaticFiles;
+
+// Configure custom provider for PDF.js static assets
+var provider = new FileExtensionContentTypeProvider();
+provider.Mappings[".mjs"] = "application/javascript";
+provider.Mappings[".ftl"] = "application/octet-stream"; // Add support for .ftl files
+
+
 var builder = WebApplication.CreateBuilder(args);
 
+
+//  Register the controller services
+//  builder.Services.AddControllers(); // Use .AddControllersWithViews(); for MVC layouts
+
+builder.Services.AddControllersWithViews();
+
 // Add services to the container.
-builder.Services.AddRazorPages();
+  builder.Services.AddRazorPages();
+
 
 var app = builder.Build();
+
+// Map the endpoints
+//  app.MapControllers(); // Required for attribute routing ([Route])
+//  app.MapControllerRoute(...) // Required instead if using pattern-based MVC routing
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Document}/{action=Index}/{id?}");
+
+  app.MapRazorPages();
+
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -14,12 +43,17 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    ContentTypeProvider = provider
+});
+
+
 
 app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapRazorPages();
 
 app.Run();
